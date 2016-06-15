@@ -1,3 +1,3 @@
 # lcsis
 
-Trained networks and evaluation software will be available soon (before June)
+Trained networks and evaluation software will be available soon (before July)
