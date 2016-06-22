@@ -58,6 +58,7 @@ The t7 dataset is stored in datasets/nirscenes
 #### VIS-LWIR ICIP2015
 
 1. Download the dataset
+
 ```bash
 cd datasets
 ./download_icip_dataset.sh
@@ -70,6 +71,7 @@ It's easier if you are the owner of the dataset :)
 #### Nirscenes eval (cpu and cuda support)
 
 Evaluation code can be found in the *eval* folder. To eval one sequence:
+
 1. You have to generate the nirscenes patch dataset
 2. Install xlua
 
@@ -128,15 +130,16 @@ For example. To eval 2ch_country
 
 For example, train a 2ch network using the country sequence
 
-    ```bash
-    cd train
-    th nirscenes_doall.lua -training_sequences country -net 2ch
-    ```
+ ```bash
+ cd train
+ th nirscenes_doall.lua -training_sequences country -net 2ch
+ ```
 
 Results will be stored in the results folder.For more options, run
-    ```bash
-    th nirscenes_doall.lua -h
-    ```
+
+```bash
+th nirscenes_doall.lua -h
+```
 
 *Note* The training code is different from the one used in the article. This new version is much faster. 
 
