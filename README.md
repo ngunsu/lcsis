@@ -113,7 +113,7 @@ For example. To eval 2ch_country
     th icip2015_eval.lua -dataset_path ../nirscenes/icip2015/ -net ../trained_networks/2ch_country.t7
     ```
 
-### Training
+### Training (2ch OK | siam and psiam in a few more days)
 
 1. Install penlight
 
