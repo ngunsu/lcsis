@@ -1,6 +1,6 @@
 # Learning cross-spectral similarity measures with deep convolutional neural networks
 
-[PDF](http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w9/papers/Aguilera_Learning_Cross-Spectral_Similarity_CVPR_2016_paper.pdf)[webpage](http://www.crisale.net/publication/cvprw16/)
+[PDF](http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w9/papers/Aguilera_Learning_Cross-Spectral_Similarity_CVPR_2016_paper.pdf) | [webpage](http://www.crisale.net/publication/cvprw16/)
 
 Bibtex
 ```latex
@@ -19,6 +19,7 @@ Bibtex
 ## Instructions
 
 First install the torch framework and cudnn
+
 1. [Install torch](http://torch.ch/docs/getting-started.html#_)
 2. [Cudnn torch](https://github.com/soumith/cudnn.torch)
 
@@ -28,7 +29,7 @@ First install the torch framework and cudnn
 
 Follow the following steps to generate the dataset
 
-1. Download patches information
+1. Download gt csv
 ```bash
 cd datasets
 ./download_nirscenes_csv.sh
