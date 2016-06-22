@@ -91,7 +91,7 @@ function train()
             p:add(-p:mean(3):expandAs(p))
 
             -- Store patch in batch and store target (1,-1)
-            inputs[{ {index},{},{},{} }] = input[{ {1},{},{},{} }]
+            inputs[{ {index},{},{},{} }] = input[{ {1},{},{},{} }]:clone()
             if trainData.labels[shuffle[i]] == 1 then
                 targets[index] = 1
             else
@@ -115,6 +115,7 @@ function train()
             -- Reset gradients
             gradParameters:zero()
 
+            local outputs = nil
             local outputs = model:forward(inputs)
             local err = criterion:forward(outputs, targets)
 
@@ -155,6 +156,7 @@ function train()
         cudnn.convert(net_to_save, nn)
         net_to_save = net_to_save:float()
     end
+    net_to_save = net_to_save:clearState()
     torch.save(filename, net_to_save)
     epoch = epoch + 1
 
