@@ -1,4 +1,8 @@
-# Learning cross-spectral similarity measures with deep convolutional neural networks
+# NEW related work!!
+
+[Cross-Spectral Local Descriptors via Quadruplet Network](https://github.com/ngunsu/qnet)
+
+## Learning cross-spectral similarity measures with deep convolutional neural networks
 
 [PDF](http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w9/papers/Aguilera_Learning_Cross-Spectral_Similarity_CVPR_2016_paper.pdf) | [webpage](http://www.crisale.net/publication/cvprw16/)
 
